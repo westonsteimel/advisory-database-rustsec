@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/lmdb-rs/RUSTSEC-2023-0047.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/lmdb-rs/RUSTSEC-2023-0047.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/lmdb-rs/RUSTSEC-2023-0047.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0047">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-07-18">
           July 18, 2023
+        </time>
+        
+        <time datetime="2023-07-29">
+          (last modified: July 29, 2023)
         </time>
         
       </dd>
@@ -119,13 +124,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-f9g6-fp84-fv92">GHSA-f9g6-fp84-fv92</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/vhbit/lmdb-rs/issues/67">
-          https://github.com/vhbit/lmdb-rs/issues/67
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/vhbit/lmdb-rs/issues/67">
+              https://github.com/vhbit/lmdb-rs/issues/67
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -153,5 +178,11 @@
     <h3 id="description">Description</h3>
     <p>The implementation of <code>FromMdbValue</code> have several unsoundness issues. First of all, it allows to reinterpret arbitrary bytes as a bool and could make undefined behavior happen with safe function. Secondly, it allows transmuting pointer without taking memory layout into consideration. The details of reproducing the bug were included in url above.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

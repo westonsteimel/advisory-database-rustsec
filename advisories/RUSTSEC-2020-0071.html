@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/time/RUSTSEC-2020-0071.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/time/RUSTSEC-2020-0071.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/time/RUSTSEC-2020-0071.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0071">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-11-19">
-          November 19, 2020
+        <time datetime="2020-11-18">
+          November 18, 2020
         </time>
         
-        <time datetime="2023-06-13">
-          (last modified: June 13, 2023)
+        <time datetime="2024-06-05">
+          (last modified: June  5, 2024)
         </time>
         
       </dd>
@@ -154,11 +155,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/time-rs/time/issues/293">
-          https://github.com/time-rs/time/issues/293
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/time-rs/time/issues/293">
+              https://github.com/time-rs/time/issues/293
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -372,7 +380,7 @@
 
     <h3 id="description">Description</h3>
     <h3>Impact</h3>
-<p>Unix-like operating systems may segfault due to dereferencing a dangling pointer in specific circumstances. This requires an environment variable to be set in a different thread than the affected functions. This may occur without the user's knowledge, notably in a third-party library.</p>
+<p>The affected functions set environment variables without synchronization. On Unix-like operating systems, this can crash in multithreaded programs. Programs may segfault due to dereferencing a dangling pointer if an environment variable is read in a different thread than the affected functions. This may occur without the user's knowledge, notably in the Rust standard library or third-party libraries.</p>
 <p>The affected functions from time 0.2.7 through 0.2.22 are:</p>
 <ul>
 <li><code>time::UtcOffset::local_offset_at</code></li>
@@ -384,9 +392,10 @@
 </ul>
 <p>The affected functions in time 0.1 (all versions) are:</p>
 <ul>
-<li><code>at</code></li>
-<li><code>at_utc</code></li>
-<li><code>now</code></li>
+<li><code>time::at_utc</code></li>
+<li><code>time::at</code></li>
+<li><code>time::now</code></li>
+<li><code>time::tzset</code></li>
 </ul>
 <p>Non-Unix targets (including Windows and wasm) are unaffected.</p>
 <h3>Patches</h3>
@@ -410,5 +419,11 @@
 <li><a href="https://github.com/vityafx/serde-aux/issues/21">vityafx/serde-aux#21</a></li>
 </ul>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

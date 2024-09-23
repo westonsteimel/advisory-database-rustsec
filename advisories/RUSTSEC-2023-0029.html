@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/nats/RUSTSEC-2023-0029.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/nats/RUSTSEC-2023-0029.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/nats/RUSTSEC-2023-0029.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0029">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           March 25, 2023
         </time>
         
-        <time datetime="2023-06-13">
-          (last modified: June 13, 2023)
+        <time datetime="2023-11-08">
+          (last modified: November  8, 2023)
         </time>
         
       </dd>
@@ -157,7 +158,11 @@
       <dt id="patched">Patched</dt>
       <dd>
         
-        no patched versions
+        <ul>
+          
+          <li><code>&gt;=0.24.1</code></li>
+          
+        </ul>
         
       </dd>
 
@@ -181,9 +186,6 @@
 
     <h3 id="description">Description</h3>
     <p>The NATS official Rust clients are vulnerable to MitM when using TLS.</p>
-<p>A fix for the <code>nats</code> crate hasn't been released yet. Since the <code>nats</code> crate
-is going to be deprecated anyway, consider switching to <code>async-nats</code> <code>&gt;= 0.29</code>
-which already fixed this vulnerability.</p>
 <p>The common name of the server's TLS certificate is validated against
 the <code>host</code>name provided by the server's plaintext <code>INFO</code> message
 during the initial connection setup phase. A MitM proxy can tamper with
@@ -205,5 +207,11 @@ attacker-controlled value it was given</li>
 <li>The client has been fooled by the MitM proxy into accepting the attacker-controlled certificate</li>
 </ol>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
