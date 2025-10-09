@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories for package &#x27;openssl-src&#x27; › RustSec Advisory Database</title>
+<title>Advisories for package &#39;openssl-src&#39; › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -61,7 +61,7 @@
   <a href="/keywords/">Keywords</a> ⋅
   <a href="/packages/">Packages</a>
 </span>
-      <h1>Advisories for package &#x27;openssl-src&#x27;</h1>
+      <h1>Advisories for package &#39;openssl-src&#39;</h1>
     </header>
 
     <ul>
@@ -76,11 +76,30 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2023-0011.html">
-      RUSTSEC-2023-0011: Vulnerability in openssl-src
+    <a href="/advisories/RUSTSEC-2023-0013.html">
+      RUSTSEC-2023-0013: Vulnerability in openssl-src
     </a>
   </h3>
-  <span><p>Invalid pointer dereference in <code>d2i_PKCS7</code> functions</p>
+  <span><p><code>NULL</code> dereference during PKCS7 data verification</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2023-02-07">
+    February  7, 2023
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2023-0009.html">
+      RUSTSEC-2023-0009: Vulnerability in openssl-src
+    </a>
+  </h3>
+  <span><p>Use-after-free following <code>BIO_new_NDEF</code></p>
 </span>
   
 </li>
@@ -133,11 +152,30 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2023-0013.html">
-      RUSTSEC-2023-0013: Vulnerability in openssl-src
+    <a href="/advisories/RUSTSEC-2023-0011.html">
+      RUSTSEC-2023-0011: Vulnerability in openssl-src
     </a>
   </h3>
-  <span><p><code>NULL</code> dereference during PKCS7 data verification</p>
+  <span><p>Invalid pointer dereference in <code>d2i_PKCS7</code> functions</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2023-02-07">
+    February  7, 2023
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2023-0007.html">
+      RUSTSEC-2023-0007: Vulnerability in openssl-src
+    </a>
+  </h3>
+  <span><p>Timing Oracle in RSA Decryption</p>
 </span>
   
 </li>
@@ -171,68 +209,11 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2023-0009.html">
-      RUSTSEC-2023-0009: Vulnerability in openssl-src
-    </a>
-  </h3>
-  <span><p>Use-after-free following <code>BIO_new_NDEF</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2023-02-07">
-    February  7, 2023
-  </time>
-
-  
-  <h3>
-    
-        
-    
     <a href="/advisories/RUSTSEC-2023-0010.html">
       RUSTSEC-2023-0010: Vulnerability in openssl-src
     </a>
   </h3>
   <span><p>Double free after calling <code>PEM_read_bio_ex</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2023-02-07">
-    February  7, 2023
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2023-0007.html">
-      RUSTSEC-2023-0007: Vulnerability in openssl-src
-    </a>
-  </h3>
-  <span><p>Timing Oracle in RSA Decryption</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2022-11-01">
-    November  1, 2022
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2022-0065.html">
-      RUSTSEC-2022-0065: Vulnerability in openssl-src
-    </a>
-  </h3>
-  <span><p>X.509 Email Address Variable Length Buffer Overflow</p>
 </span>
   
 </li>
@@ -252,6 +233,25 @@
     </a>
   </h3>
   <span><p>X.509 Email Address 4-byte Buffer Overflow</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2022-11-01">
+    November  1, 2022
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2022-0065.html">
+      RUSTSEC-2022-0065: Vulnerability in openssl-src
+    </a>
+  </h3>
+  <span><p>X.509 Email Address Variable Length Buffer Overflow</p>
 </span>
   
 </li>
@@ -321,13 +321,13 @@
   
   <h3>
     
-      <span class="tag medium">MEDIUM</span>
+      <span class="tag high">HIGH</span>
       
-    <a href="/advisories/RUSTSEC-2022-0027.html">
-      RUSTSEC-2022-0027: Vulnerability in openssl-src
+    <a href="/advisories/RUSTSEC-2022-0025.html">
+      RUSTSEC-2022-0025: Vulnerability in openssl-src
     </a>
   </h3>
-  <span><p><code>OCSP_basic_verify</code> may incorrectly verify the response signing certificate</p>
+  <span><p>Resource leakage when decoding certificates and keys</p>
 </span>
   
 </li>
@@ -359,13 +359,13 @@
   
   <h3>
     
-      <span class="tag high">HIGH</span>
+      <span class="tag medium">MEDIUM</span>
       
-    <a href="/advisories/RUSTSEC-2022-0025.html">
-      RUSTSEC-2022-0025: Vulnerability in openssl-src
+    <a href="/advisories/RUSTSEC-2022-0027.html">
+      RUSTSEC-2022-0027: Vulnerability in openssl-src
     </a>
   </h3>
-  <span><p>Resource leakage when decoding certificates and keys</p>
+  <span><p><code>OCSP_basic_verify</code> may incorrectly verify the response signing certificate</p>
 </span>
   
 </li>
@@ -416,25 +416,6 @@
   
   <h3>
     
-      <span class="tag critical">CRITICAL</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0097.html">
-      RUSTSEC-2021-0097: Vulnerability in openssl-src
-    </a>
-  </h3>
-  <span><p>SM2 Decryption Buffer Overflow</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-08-24">
-    August 24, 2021
-  </time>
-
-  
-  <h3>
-    
       <span class="tag high">HIGH</span>
       
     <a href="/advisories/RUSTSEC-2021-0098.html">
@@ -447,20 +428,20 @@
 </li>
       
       <li>
-  <time datetime="2021-05-01">
-    May  1, 2021
+  <time datetime="2021-08-24">
+    August 24, 2021
   </time>
 
   
   <h3>
     
-      <span class="tag medium">MEDIUM</span>
+      <span class="tag critical">CRITICAL</span>
       
-    <a href="/advisories/RUSTSEC-2021-0058.html">
-      RUSTSEC-2021-0058: Vulnerability in openssl-src
+    <a href="/advisories/RUSTSEC-2021-0097.html">
+      RUSTSEC-2021-0097: Vulnerability in openssl-src
     </a>
   </h3>
-  <span><p>Null pointer deref in <code>X509_issuer_and_serial_hash()</code></p>
+  <span><p>SM2 Decryption Buffer Overflow</p>
 </span>
   
 </li>
@@ -480,6 +461,25 @@
     </a>
   </h3>
   <span><p>NULL pointer deref in signature_algorithms processing</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2021-05-01">
+    May  1, 2021
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag medium">MEDIUM</span>
+      
+    <a href="/advisories/RUSTSEC-2021-0058.html">
+      RUSTSEC-2021-0058: Vulnerability in openssl-src
+    </a>
+  </h3>
+  <span><p>Null pointer deref in <code>X509_issuer_and_serial_hash()</code></p>
 </span>
   
 </li>
