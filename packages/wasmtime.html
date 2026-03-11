@@ -41,7 +41,7 @@
       <a href="/feed.xml" title="Atom Feed" aria-label="Atom Feed"><svg xmlns="http://www.w3.org/2000/svg" style="height:1em" viewBox="0 0 8 8">
         <style type="text/css">
           .button {stroke: none; fill: currentColor;}
-          .symbol {stroke: none; fill-opacity=0;}
+          .symbol {stroke: none; fill-opacity: 0;}
         </style>
         <rect   class="button" width="8" height="8" rx="1.5" />
         <circle class="symbol" cx="2" cy="6" r="1" />
@@ -65,6 +65,120 @@
     </header>
 
     <ul>
+      
+      <li>
+  <time datetime="2026-02-24">
+    February 24, 2026
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag medium">MEDIUM</span>
+      
+    <a href="/advisories/RUSTSEC-2026-0020.html">
+      RUSTSEC-2026-0020: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Guest-controlled resource exhaustion in WASI implementations</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-02-24">
+    February 24, 2026
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag medium">MEDIUM</span>
+      
+    <a href="/advisories/RUSTSEC-2026-0022.html">
+      RUSTSEC-2026-0022: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Panic when dropping a <code>[Typed]Func::call_async</code> future</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-02-24">
+    February 24, 2026
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag medium">MEDIUM</span>
+      
+    <a href="/advisories/RUSTSEC-2026-0021.html">
+      RUSTSEC-2026-0021: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Panic adding excessive fields to a <code>wasi:http/types.fields</code> instance</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-01-27">
+    January 27, 2026
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag medium">MEDIUM</span>
+      
+    <a href="/advisories/RUSTSEC-2026-0006.html">
+      RUSTSEC-2026-0006: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Wasmtime segfault or unused out-of-sandbox load with <code>f64.copysign</code> operator on x86-64</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-11-13">
+    November 13, 2025
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag low">LOW</span>
+      
+    <a href="/advisories/RUSTSEC-2025-0118.html">
+      RUSTSEC-2025-0118: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Unsound API access to a WebAssembly shared linear memory</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-10-25">
+    October 25, 2025
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2025-0112.html">
+      RUSTSEC-2025-0112: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Possible host crash with host-to-wasm component intrinsics</p>
+</span>
+  
+</li>
       
       <li>
   <time datetime="2025-07-18">
@@ -93,13 +207,13 @@
   
   <h3>
     
-        
-    
-    <a href="/advisories/RUSTSEC-2022-0099.html">
-      RUSTSEC-2022-0099: Vulnerability in wasmtime
+      <span class="tag low">LOW</span>
+      
+    <a href="/advisories/RUSTSEC-2023-0093.html">
+      RUSTSEC-2023-0093: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Use after free with <code>externref</code>s and epoch interruption in Wasmtime</p>
+  <span><p>Miscompilation of <code>i8x16.select</code> with the same inputs on x86_64</p>
 </span>
   
 </li>
@@ -114,11 +228,11 @@
     
       <span class="tag low">LOW</span>
       
-    <a href="/advisories/RUSTSEC-2022-0097.html">
-      RUSTSEC-2022-0097: Vulnerability in wasmtime
+    <a href="/advisories/RUSTSEC-2024-0439.html">
+      RUSTSEC-2024-0439: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Out of bounds write in <code>wasmtime_trap_code</code> C API function</p>
+  <span><p>Race condition could lead to WebAssembly control-flow integrity and type safety violations</p>
 </span>
   
 </li>
@@ -131,13 +245,13 @@
   
   <h3>
     
-      <span class="tag critical">CRITICAL</span>
+      <span class="tag high">HIGH</span>
       
-    <a href="/advisories/RUSTSEC-2023-0090.html">
-      RUSTSEC-2023-0090: Vulnerability in wasmtime
+    <a href="/advisories/RUSTSEC-2022-0098.html">
+      RUSTSEC-2022-0098: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Guest-controlled out-of-bounds read/write on x86_64</p>
+  <span><p>Data leakage between instances in the pooling allocator</p>
 </span>
   
 </li>
@@ -150,13 +264,13 @@
   
   <h3>
     
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0438.html">
-      RUSTSEC-2024-0438: Vulnerability in wasmtime
+      <span class="tag low">LOW</span>
+      
+    <a href="/advisories/RUSTSEC-2023-0091.html">
+      RUSTSEC-2023-0091: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Wasmtime doesn't fully sandbox all the Windows device filenames</p>
+  <span><p>Miscompilation of wasm <code>i64x2.shr_s</code> instruction with constant input on x86_64</p>
 </span>
   
 </li>
@@ -190,6 +304,63 @@
     
         
     
+    <a href="/advisories/RUSTSEC-2022-0100.html">
+      RUSTSEC-2022-0100: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Use After Free with <code>externref</code>s in Wasmtime</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-05-02">
+    May  2, 2025
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2022-0099.html">
+      RUSTSEC-2022-0099: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Use after free with <code>externref</code>s and epoch interruption in Wasmtime</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-05-02">
+    May  2, 2025
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2024-0438.html">
+      RUSTSEC-2024-0438: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Wasmtime doesn't fully sandbox all the Windows device filenames</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-05-02">
+    May  2, 2025
+  </time>
+
+  
+  <h3>
+    
+        
+    
     <a href="/advisories/RUSTSEC-2022-0096.html">
       RUSTSEC-2022-0096: Vulnerability in wasmtime
     </a>
@@ -209,87 +380,11 @@
     
       <span class="tag low">LOW</span>
       
-    <a href="/advisories/RUSTSEC-2023-0092.html">
-      RUSTSEC-2023-0092: Vulnerability in wasmtime
+    <a href="/advisories/RUSTSEC-2022-0097.html">
+      RUSTSEC-2022-0097: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Undefined Behavior in Rust runtime functions</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-05-02">
-    May  2, 2025
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2024-0440.html">
-      RUSTSEC-2024-0440: Vulnerability in wasmtime
-    </a>
-  </h3>
-  <span><p>Runtime crash when combining tail calls with stack traces</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-05-02">
-    May  2, 2025
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag low">LOW</span>
-      
-    <a href="/advisories/RUSTSEC-2023-0091.html">
-      RUSTSEC-2023-0091: Vulnerability in wasmtime
-    </a>
-  </h3>
-  <span><p>Miscompilation of wasm <code>i64x2.shr_s</code> instruction with constant input on x86_64</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-05-02">
-    May  2, 2025
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2022-0098.html">
-      RUSTSEC-2022-0098: Vulnerability in wasmtime
-    </a>
-  </h3>
-  <span><p>Data leakage between instances in the pooling allocator</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-05-02">
-    May  2, 2025
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2022-0101.html">
-      RUSTSEC-2022-0101: Vulnerability in wasmtime
-    </a>
-  </h3>
-  <span><p>Miscompilation of constant values in division on AArch64</p>
+  <span><p>Out of bounds write in <code>wasmtime_trap_code</code> C API function</p>
 </span>
   
 </li>
@@ -340,13 +435,51 @@
   
   <h3>
     
-      <span class="tag low">LOW</span>
+      <span class="tag medium">MEDIUM</span>
       
-    <a href="/advisories/RUSTSEC-2024-0439.html">
-      RUSTSEC-2024-0439: Vulnerability in wasmtime
+    <a href="/advisories/RUSTSEC-2024-0440.html">
+      RUSTSEC-2024-0440: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Race condition could lead to WebAssembly control-flow integrity and type safety violations</p>
+  <span><p>Runtime crash when combining tail calls with stack traces</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-05-02">
+    May  2, 2025
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag critical">CRITICAL</span>
+      
+    <a href="/advisories/RUSTSEC-2023-0090.html">
+      RUSTSEC-2023-0090: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Guest-controlled out-of-bounds read/write on x86_64</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2025-05-02">
+    May  2, 2025
+  </time>
+
+  
+  <h3>
+    
+      <span class="tag low">LOW</span>
+      
+    <a href="/advisories/RUSTSEC-2023-0092.html">
+      RUSTSEC-2023-0092: Vulnerability in wasmtime
+    </a>
+  </h3>
+  <span><p>Undefined Behavior in Rust runtime functions</p>
 </span>
   
 </li>
@@ -361,30 +494,11 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2022-0100.html">
-      RUSTSEC-2022-0100: Vulnerability in wasmtime
+    <a href="/advisories/RUSTSEC-2022-0101.html">
+      RUSTSEC-2022-0101: Vulnerability in wasmtime
     </a>
   </h3>
-  <span><p>Use After Free with <code>externref</code>s in Wasmtime</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-05-02">
-    May  2, 2025
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag low">LOW</span>
-      
-    <a href="/advisories/RUSTSEC-2023-0093.html">
-      RUSTSEC-2023-0093: Vulnerability in wasmtime
-    </a>
-  </h3>
-  <span><p>Miscompilation of <code>i8x16.select</code> with the same inputs on x86_64</p>
+  <span><p>Miscompilation of constant values in division on AArch64</p>
 </span>
   
 </li>
